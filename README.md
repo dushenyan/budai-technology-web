@@ -99,4 +99,4 @@
 
 ## 项目截图
 
-![alt text](image.png)
+![alt text](/static/image.png)
