@@ -96,3 +96,7 @@
 - [Anime.js](https://animejs.com/) - 轻量级动画库
 - [Isotope](https://isotope.metafizzy.co/) - 瀑布流布局
 - [ScrollReveal](https://scrollrevealjs.org/) - 元素进入视窗动画
+
+## 项目截图
+
+![alt text](image.png)
