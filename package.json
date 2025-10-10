@@ -1,0 +1,23 @@
+{
+  "name": "budai-technology-web",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "preview": "live-server dist"
+  },
+  "keywords": [],
+  "author": "dushenyan",
+  "packageManager": "pnpm@10.7.1",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.2",
+    "live-server": "^1.2.2",
+    "rollup": "^4.52.4",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
