@@ -20,6 +20,7 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.2",
+    "less": "^4.4.2",
     "live-server": "^1.2.2",
     "rollup": "^4.52.4",
     "rollup-plugin-copy": "^3.5.0",
