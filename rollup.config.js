@@ -6,10 +6,15 @@ import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 import { execSync } from 'child_process';
 import chokidar from 'chokidar';
+import fs from 'fs';
 
 // 确保HTML被复制
 function copyHTML() {
   try {
+    // 确保dist目录存在
+    if (!fs.existsSync('dist')) {
+      fs.mkdirSync('dist', { recursive: true });
+    }
     execSync('cp src/index.html dist/');
     console.log('HTML copied successfully');
   } catch (error) {
