@@ -32,21 +32,27 @@ jobs:
       # 步骤1：检出代码
       - name: Checkout
         uses: actions/checkout@v4
+
+      # 步骤2：安装pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10
       
-      # 步骤2：设置Node.js环境
+      # 步骤3：设置Node.js环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
-          cache: "npm"
+          cache: 'pnpm'
       
       # 步骤3：安装依赖
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       
       # 步骤4：构建项目
       - name: Build project
-        run: npm run build
+        run: pnpm build
       
       # 步骤5：设置GitHub Pages环境
       - name: Setup Pages

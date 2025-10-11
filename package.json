@@ -1,13 +1,19 @@
 {
   "name": "budai-technology-web",
-  "description": "",
+  "description": "布袋云科技官方网站项目",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "preview": "live-server dist"
   },
-  "keywords": [],
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "less",
+    "rollup"
+  ],
   "author": "dushenyan",
   "packageManager": "pnpm@10.7.1",
   "devDependencies": {
