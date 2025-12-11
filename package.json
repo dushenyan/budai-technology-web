@@ -13,7 +13,6 @@
     "less",
     "rollup"
   ],
-  "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/rollup.svg",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
