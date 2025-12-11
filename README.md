@@ -38,7 +38,6 @@
    git clone <repository-url>
    ```
 
-
 1. 进入项目目录：
    ```bash
    cd budai-technology-web
@@ -53,7 +52,7 @@
 3. 启动构建预览服务器：
    ```bash
    pnpm run dev
-   pnpm run preview 
+   pnpm run preview
    ```
 
 ## 功能特性

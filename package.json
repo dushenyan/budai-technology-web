@@ -1,12 +1,11 @@
 {
   "name": "budai-technology-web",
-  "description": "布袋云科技官方网站项目",
   "type": "module",
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "preview": "live-server dist"
-  },
+  "packageManager": "pnpm@10.7.1",
+  "description": "布袋云科技官方网站项目",
+  "author": "dushenyan <dushenyan88@gmail.com>",
+  "homepage": "https://budai-technology-web.netlify.app/",
+  "repository": "https://github.com/dushenyan/budai-technology-web",
   "keywords": [
     "html",
     "css",
@@ -14,20 +13,29 @@
     "less",
     "rollup"
   ],
-  "author": "dushenyan",
-  "packageManager": "pnpm@10.7.1",
+  "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/rollup.svg",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "preview": "live-server dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:ui": "npx @eslint/config-inspector"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^6.6.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.2",
+    "eslint": "^9.39.1",
     "less": "^4.4.2",
     "live-server": "^1.2.2",
     "rollup": "^4.52.4",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2"
-  },
-  "dependencies": {
-    "chokidar": "^4.0.3"
   }
 }
